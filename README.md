@@ -24,7 +24,7 @@ Because even the most legendary developer advocates need a central hub to keep t
 ---
 
 ## **Quick Setup**  
-1. Clone this repository like a technologist:  
+1. Clone this repository like a good developer:  
    ```bash
    git clone https://github.com/ashleymcnamara/ashley-social.git
    cd ashley-social
