@@ -76,22 +76,37 @@ body {
 }
 
 @media (max-width: 640px) {
+  html {
+    font-size: 18px; /* Increase base font size on mobile */
+  }
+  
   body {
     padding: 0.5rem;
   }
 
   .container {
-    padding: 1rem;
-    margin: 0.5rem;
+    padding: 1.25rem;
+    margin: 0;
+    width: 100%;
+    max-width: none;
   }
   
   .profile-img {
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
   }
   
   .social-link {
-    padding: 0.75rem;
-    margin-bottom: 0.75rem;
+    padding: 1rem;
+    margin-bottom: 0.875rem;
+    font-size: 1.1rem;
+  }
+
+  .handle {
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size: 0.875rem;
   }
 }
