@@ -47,7 +47,7 @@ const App = () => (
       <div className="handle">ashleymcnamara1</div>
     </a>
 
-    <a href="https://www.instagram.com/ashley_n_willis" className="social-link instagram-link">
+    <a href="https://www.instagram.com/ashley_n_willis/profilecard/?igsh=dXp1eG1nbjRhanZ2" className="social-link instagram-link">
       <div>Instagram</div>
       <div className="handle">@ashley_n_willis</div>
     </a>
