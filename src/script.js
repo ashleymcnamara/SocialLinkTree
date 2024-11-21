@@ -53,7 +53,7 @@ const App = () => (
     </a>
 
     <div className="footer">
-      ashley.social • Built with ☕️ and an aggressive aversion to certain billionaires
+      ashleywillis.social • Built with ☕️ and an aggressive aversion to certain billionaires
     </div>
   </div>
 );
