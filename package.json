@@ -33,7 +33,7 @@
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "browser-sync": "^2.26.7",
     "del": "^4.1.1",
-    "glob": "^7.1.4",
+    "glob": "^13.0.6",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-inject-partials": "^1.0.5",
