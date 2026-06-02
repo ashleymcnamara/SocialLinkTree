@@ -7,6 +7,11 @@ body {
   background: linear-gradient(-45deg, #9333ea, #ec4899, #3b82f6);
   font-family: system-ui, sans-serif;
   padding: 1rem;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .container {
@@ -17,6 +22,8 @@ body {
   padding: 2rem;
   max-width: 28rem;
   width: 100%;
+  margin: 1rem;
+  box-sizing: border-box;
 }
 
 .profile-img {
@@ -66,4 +73,40 @@ body {
   font-style: italic;
   color: #6b7280;
   margin-top: 2rem;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 18px; /* Increase base font size on mobile */
+  }
+  
+  body {
+    padding: 0.5rem;
+  }
+
+  .container {
+    padding: 1.25rem;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+  }
+  
+  .profile-img {
+    width: 7rem;
+    height: 7rem;
+  }
+  
+  .social-link {
+    padding: 1rem;
+    margin-bottom: 0.875rem;
+    font-size: 1.1rem;
+  }
+
+  .handle {
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size: 0.875rem;
+  }
 }
