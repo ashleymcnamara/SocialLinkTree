@@ -3,6 +3,11 @@
   "version": "2024.11.21-21.02.15",
   "license": "MIT",
   "homepage": "https://codepen.io/AshleyWillis/pen/GRVVRwB",
+  "overrides": {
+    "sockjs": {
+      "uuid": "^11.1.1"
+    }
+  },
   "scripts": {
     "build": "gulp -f ./build/gulpfile.js --cwd ./ --continue",
     "serve": "gulp serve -f ./build/gulpfile.js --cwd ./ --continue",
@@ -31,13 +36,13 @@
     "@babel/plugin-transform-modules-commonjs": "^7.4.4",
     "@babel/plugin-transform-react-display-name": "^7.2.0",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^3.0.4",
     "del": "^4.1.1",
     "glob": "^7.1.4",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.1",
     "gulp-babel": "^8.0.0",
     "gulp-inject-partials": "^1.0.5",
-    "gulp-rename": "^1.4.0",
+    "gulp-rename": "^2.1.0",
     "webpack": "^5.106.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.2.4"
