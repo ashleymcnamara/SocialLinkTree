@@ -43,7 +43,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-inject-partials": "^1.0.5",
     "gulp-rename": "^2.1.0",
-    "webpack": "^5.106.2",
+    "webpack": "^5.107.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.2.4"
   },
