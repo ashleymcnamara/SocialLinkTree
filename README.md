@@ -26,14 +26,14 @@ Because even the most legendary developer advocates need a central hub to keep t
 ## **Quick Setup**  
 1. Clone this repository like a good developer:  
    ```bash
-   git clone https://github.com/ashleymcnamara/ashley-social.git
-   cd ashley-social
+   git clone https://github.com/ashleymcnamara/SocialLinkTree.git
+   cd SocialLinkTree
    ```
 2. Open `index.template.html` in your browser. Marvel at its brilliance.  
 3. No npm install or build scripts. Just plain ol’ HTML/CSS/JS goodness.  
 
 ---
-ß
+
 ## **Tech Stack**  
 - **HTML**: For structure.  
 - **CSS**: For vibes.  
