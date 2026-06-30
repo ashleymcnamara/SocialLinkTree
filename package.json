@@ -44,7 +44,7 @@
     "gulp-inject-partials": "^1.0.5",
     "gulp-rename": "^2.1.0",
     "webpack": "^5.108.3",
-    "webpack-cli": "^5.1.4",
+    "webpack-cli": "^7.1.0",
     "webpack-dev-server": "^5.2.5"
   },
   "browserslist": [
