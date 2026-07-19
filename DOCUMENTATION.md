@@ -1,7 +1,8 @@
-# CodePen Export with Build Process
-_Transform raw code into a browser-ready preview... offline_
+# Static Site Build Process
+_Transform source files into a browser-ready preview._
 
-This package contains all of the original code ([src/](./src/)), and a custom build script with processors. You'll be able to edit and build for a local CodePen-like experience.
+This package contains the source site in [`src/`](./src/) and a small Gulp
+build that produces the deployable files in [`dist/`](./dist/).
 
 ## Installation
 
@@ -43,14 +44,14 @@ npm run serve
 |  |-- gulpfile.js - The tasks for the main build process
 |  |-- util.js - Utilities used by the tasks
 |
-|-- /src/ - Your code
-|  |-- index.template.html - The wrapper around your compiled HTML that includes any external stylesheets and scripts
-|  |-- index.partial.(html|pug|haml|...) - The raw HTML input or preprocessor equivalent
-|  |-- style.(css|scss|less|...) - The raw CSS input, or preprocessor equivalent
-|  |-- script.(js|ts|coffee|...) - The raw JavaScript input, or preprocessor equivalent
+|-- /src/ - Site source
+|  |-- index.template.html - The document shell and metadata
+|  |-- index.partial.html - The semantic page content
+|  |-- style.css - Design tokens, layout, and interaction states
+|  |-- /assets/ - Local profile artwork and favicon
 |
 |-- /dist/ - The compiled output after running `npm run build`
 |  |-- index.html
-|  |-- script.js
 |  |-- style.css
+|  |-- /assets/
 ```
