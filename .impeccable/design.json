@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "title": "Ashley Desktop Design System",
+  "register": "brand",
+  "intent": "A responsive personal social hub presented as an original Classic Mac OS 8/9-inspired desktop.",
+  "principles": [
+    "Navigation first: every profile is a real link and works without JavaScript.",
+    "Use recognizable desktop interface objects rather than decorative cards.",
+    "Give Twitter, Bluesky, Threads, GitHub, LinkedIn, and Instagram equal weight.",
+    "Keep Easter eggs optional, accessible, and positive.",
+    "Preserve WCAG 2.2 AA contrast, visible focus, keyboard access, and reduced motion."
+  ],
+  "tokens": {
+    "color": {
+      "desktop": "#6766a4",
+      "desktopDark": "#56558e",
+      "chrome": "#d6d6d6",
+      "chromeLight": "#ffffff",
+      "chromeMid": "#a6a6a6",
+      "chromeDark": "#555555",
+      "ink": "#111111",
+      "paper": "#ffffff",
+      "selection": "#000080",
+      "selectionSoft": "#d9d9f3",
+      "note": "#fff3a6",
+      "online": "#087f23",
+      "twitter": "#005a8d",
+      "bluesky": "#075985",
+      "threads": "#17132d",
+      "github": "#24292f",
+      "linkedin": "#0a66c2",
+      "instagram": "#9d174d"
+    },
+    "typography": {
+      "family": "\"Charcoal\", \"Chicago\", \"Geneva\", Verdana, Arial, sans-serif",
+      "bodySize": "16px",
+      "bodyLineHeight": 1.5
+    },
+    "motion": {
+      "durationFast": "90ms",
+      "easeSnap": "cubic-bezier(0.22, 1, 0.36, 1)",
+      "reducedMotion": "Disable starfield animation and do not activate After Dark."
+    },
+    "depth": {
+      "windowShadow": "0.45rem 0.45rem 0 rgba(17, 17, 17, 0.45)",
+      "border": "2px to 3px solid #111111",
+      "style": "Hard-edged raised and recessed platinum chrome; no soft shadows."
+    }
+  },
+  "components": {
+    "menuBar": "Sticky platinum system bar with AW icon, compact navigation, and clock.",
+    "window": "Striped title bar, raised frame, paper or chrome content, and optional status bar.",
+    "finderList": "Six equal profile rows with platform badge, name, handle, file kind, and open indicator.",
+    "desktopShortcut": "Original AW-themed glyph with a keyboard-focusable label.",
+    "readMe": "Positive yellow note about curiosity, community, and finding Ashley online.",
+    "secretAbout": "Native dialog opened by five AW-logo activations; Escape closes and restores focus."
+  },
+  "responsive": {
+    "minimumWidth": "320px",
+    "smallScreen": "Stack windows in document flow and collapse secondary Finder metadata before primary labels.",
+    "overflow": "Horizontal document overflow is not permitted."
+  },
+  "interaction": {
+    "wallpaper": "Shift-click blank desktop space or press Shift+W.",
+    "afterDark": "Enter the Konami sequence; unavailable when reduced motion is requested.",
+    "announcements": "Use an aria-live region for wallpaper and mode changes."
+  },
+  "content": {
+    "canonicalDomain": "ashleywillis.social",
+    "profiles": [
+      "Twitter",
+      "Bluesky",
+      "Threads",
+      "GitHub",
+      "LinkedIn",
+      "Instagram"
+    ],
+    "tone": "Playful, candid, confident, curious, and platform-neutral.",
+    "avoid": [
+      "Platform grievance language",
+      "Proprietary Apple logos or assets",
+      "Hidden core navigation",
+      "Unequal profile prominence"
+    ]
+  }
+}

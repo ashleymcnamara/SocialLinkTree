@@ -1,61 +1,152 @@
-// Make sure to set Babel as preprocessor in settings
-const App = () => /*#__PURE__*/
-React.createElement("div", { className: "container" }, /*#__PURE__*/
-React.createElement("div", { style: { textAlign: 'center', marginBottom: '2rem' } }, /*#__PURE__*/
-React.createElement("img", {
-  src: "https://cdn.bsky.app/img/avatar/plain/did:plc:5tgxxpsiv36w3e37im6kd2se/bafkreifi4eyljcts2nbyilhvbpx73jncektv7iidf7eaub7wzomxk6fqmy@jpeg",
-  alt: "Profile",
-  className: "profile-img" }), /*#__PURE__*/
+(() => {
+  "use strict";
 
-React.createElement("h1", { style: { fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '0.5rem' } }, "Ashley Willis"), /*#__PURE__*/
+  const requireElement = (selector) => {
+    const element = document.querySelector(selector);
+    if (!element) {
+      throw new Error(`Missing required Easter egg element: ${selector}`);
+    }
+    return element;
+  };
 
+  const body = document.body;
+  const desktop = requireElement("#desktop");
+  const logo = requireElement("#aw-logo");
+  const secretAbout = requireElement("#about-this-website");
+  const systemStatus = requireElement("#system-status");
+  const announcement = requireElement("#easter-egg-status");
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-React.createElement("p", { style: { color: '#4b5563' } }, "Find me on the internet", /*#__PURE__*/
+  const wallpapers = [
+    { value: "", name: "Periwinkle Dither" },
+    { value: "ocean", name: "Ocean Tile" },
+    { value: "graphite", name: "Graphite Weave" }
+  ];
+  const konamiSequence = [
+    "ArrowUp",
+    "ArrowUp",
+    "ArrowDown",
+    "ArrowDown",
+    "ArrowLeft",
+    "ArrowRight",
+    "ArrowLeft",
+    "ArrowRight",
+    "b",
+    "a"
+  ];
 
-React.createElement("br", null), /*#__PURE__*/
-React.createElement("span", { style: { fontSize: '0.875rem', fontStyle: 'italic' } }, "(except that one site we don't talk about anymore \uD83D\uDC40)"))), /*#__PURE__*/
+  let wallpaperIndex = 0;
+  let logoClickCount = 0;
+  let logoClickTimer;
+  let konamiIndex = 0;
 
+  const announce = (message) => {
+    announcement.textContent = "";
+    window.requestAnimationFrame(() => {
+      announcement.textContent = message;
+    });
+  };
 
+  const cycleWallpaper = () => {
+    wallpaperIndex = (wallpaperIndex + 1) % wallpapers.length;
+    const wallpaper = wallpapers[wallpaperIndex];
 
+    if (wallpaper.value) {
+      body.dataset.wallpaper = wallpaper.value;
+    } else {
+      delete body.dataset.wallpaper;
+    }
 
+    announce(`Desktop wallpaper changed to ${wallpaper.name}.`);
+  };
 
-React.createElement("a", { href: "https://x.com/ashleymcnamara", className: "social-link twitter-link" }, /*#__PURE__*/
-React.createElement("div", null, "\uD835\uDD4F (we don't talk about \uD835\uDD4F)"), /*#__PURE__*/
-React.createElement("div", { className: "handle" }, "@ashleymcnamara"), /*#__PURE__*/
-React.createElement("div", { style: { fontSize: '0.75rem', fontStyle: 'italic' } }, "\uD83E\uDEA6 RIP Twitter (2006-2022)")), /*#__PURE__*/
+  const setAfterDark = (enabled) => {
+    if (enabled) {
+      body.dataset.afterDark = "true";
+      systemStatus.textContent = "After Dark: Running";
+      announce("After Dark starfield unlocked.");
+    } else {
+      delete body.dataset.afterDark;
+      systemStatus.textContent = "Internet: Connected";
+      announce("After Dark starfield closed.");
+    }
+  };
 
+  const toggleAfterDark = () => {
+    if (reducedMotion.matches) {
+      announce("After Dark is disabled while reduced motion is enabled.");
+      return;
+    }
 
+    setAfterDark(body.dataset.afterDark !== "true");
+  };
 
+  logo.addEventListener("click", () => {
+    logoClickCount += 1;
+    window.clearTimeout(logoClickTimer);
 
-React.createElement("a", { href: "https://bsky.app/profile/ashley.dev", className: "social-link bluesky-link" }, /*#__PURE__*/
-React.createElement("div", null, "Bluesky"), /*#__PURE__*/
-React.createElement("div", { className: "handle" }, "@ashley.dev")), /*#__PURE__*/
+    if (logoClickCount === 5) {
+      logoClickCount = 0;
+      secretAbout.showModal();
+      announce("About This Website opened.");
+      return;
+    }
 
+    logoClickTimer = window.setTimeout(() => {
+      logoClickCount = 0;
+    }, 4000);
+  });
 
-React.createElement("a", { href: "https://www.threads.net/@ashley_n_willis", className: "social-link threads-link" }, /*#__PURE__*/
-React.createElement("div", null, "Threads"), /*#__PURE__*/
-React.createElement("div", { className: "handle" }, "@ashley_n_willis")), /*#__PURE__*/
+  desktop.addEventListener("click", (event) => {
+    if (event.shiftKey && event.target === desktop) {
+      cycleWallpaper();
+    }
+  });
 
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && secretAbout.open) {
+      event.preventDefault();
+      secretAbout.close();
+      return;
+    }
 
-React.createElement("a", { href: "https://github.com/ashleymcnamara", className: "social-link github-link" }, /*#__PURE__*/
-React.createElement("div", null, "GitHub"), /*#__PURE__*/
-React.createElement("div", { className: "handle" }, "@ashleymcnamara")), /*#__PURE__*/
+    const target = event.target;
+    if (
+      target instanceof HTMLInputElement ||
+      target instanceof HTMLTextAreaElement ||
+      target instanceof HTMLSelectElement ||
+      target?.isContentEditable
+    ) {
+      return;
+    }
 
+    if (event.shiftKey && event.key.toLowerCase() === "w") {
+      cycleWallpaper();
+      return;
+    }
 
-React.createElement("a", { href: "https://www.linkedin.com/in/ashleymcnamara1", className: "social-link linkedin-link" }, /*#__PURE__*/
-React.createElement("div", null, "LinkedIn"), /*#__PURE__*/
-React.createElement("div", { className: "handle" }, "ashleymcnamara1")), /*#__PURE__*/
+    const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
+    if (key === konamiSequence[konamiIndex]) {
+      konamiIndex += 1;
+    } else {
+      konamiIndex = key === konamiSequence[0] ? 1 : 0;
+    }
 
+    if (konamiIndex === konamiSequence.length) {
+      konamiIndex = 0;
+      toggleAfterDark();
+    }
+  });
 
-React.createElement("a", { href: "https://www.instagram.com/ashley_n_willis", className: "social-link instagram-link" }, /*#__PURE__*/
-React.createElement("div", null, "Instagram"), /*#__PURE__*/
-React.createElement("div", { className: "handle" }, "@ashley_n_willis")), /*#__PURE__*/
+  reducedMotion.addEventListener("change", (event) => {
+    if (event.matches && body.dataset.afterDark === "true") {
+      setAfterDark(false);
+      announce("After Dark closed because reduced motion was enabled.");
+    }
+  });
 
-
-React.createElement("div", { className: "footer" }, "ashley.social \u2022 Built with \u2615\uFE0F and an aggressive aversion to certain billionaires"));
-
-
-
-
-
-ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('root'));
+  secretAbout.addEventListener("close", () => {
+    window.setTimeout(() => logo.focus(), 0);
+    announce("About This Website closed.");
+  });
+})();

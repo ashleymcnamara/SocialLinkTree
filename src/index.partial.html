@@ -1,1 +1,222 @@
-<div id="root"></div>
+<a class="skip-link" href="#profiles">Skip to Internet Places</a>
+
+<header class="menu-bar">
+  <div class="menu-bar__brand">
+    <button class="menu-bar__logo" id="aw-logo" type="button" aria-label="Ashley Desktop icon">AW</button>
+    <a class="menu-bar__home" href="#desktop">Ashley Desktop</a>
+  </div>
+
+  <nav class="menu-bar__nav" aria-label="Desktop menu">
+    <a href="#about">About</a>
+    <a href="#profiles">Profiles</a>
+    <a href="#read-me">Read Me</a>
+  </nav>
+
+  <p class="menu-bar__status">
+    <span class="status-light" aria-hidden="true"></span>
+    <span id="system-status">Internet: Connected</span>
+  </p>
+</header>
+
+<main class="desktop" id="desktop">
+  <nav class="desktop-shortcuts" aria-label="Desktop shortcuts">
+    <a class="shortcut" href="#about">
+      <span class="shortcut__icon shortcut__icon--about" aria-hidden="true">AW</span>
+      <span>About Ashley</span>
+    </a>
+    <a class="shortcut" href="#profiles">
+      <span class="shortcut__icon shortcut__icon--profiles" aria-hidden="true">@</span>
+      <span>Internet Places</span>
+    </a>
+  </nav>
+
+  <section class="window window--about" id="about" aria-labelledby="about-title">
+    <header class="window__titlebar">
+      <h1 id="about-title">About Ashley</h1>
+    </header>
+
+    <div class="window__content about-panel">
+      <div class="portrait-frame">
+        <img
+          class="portrait"
+          src="./assets/ashley-willis.jpg"
+          width="640"
+          height="640"
+          alt="Ashley Willis wearing glasses and looking at the camera"
+          decoding="async"
+          fetchpriority="high"
+        >
+      </div>
+
+      <div class="about-copy">
+        <p class="welcome">Welcome to my corner of the internet.</p>
+        <h2>Ashley Willis</h2>
+        <p class="bio">
+          Developer advocate, open-source enthusiast, and professional internet
+          person.
+        </p>
+
+        <dl class="system-info">
+          <div>
+            <dt>Status</dt>
+            <dd>Online</dd>
+          </div>
+          <div>
+            <dt>Home</dt>
+            <dd>ashleywillis.social</dd>
+          </div>
+          <div>
+            <dt>Mode</dt>
+            <dd>Curious</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <footer class="window__statusbar">1 profile selected</footer>
+  </section>
+
+  <section class="window window--profiles" id="profiles" aria-labelledby="profiles-title">
+    <header class="window__titlebar">
+      <h2 id="profiles-title">Internet Places</h2>
+    </header>
+
+    <div class="window__toolbar">
+      <strong>Where to find me</strong>
+      <span>Double-clicking not required.</span>
+    </div>
+
+    <nav aria-label="Ashley's social profiles">
+      <ul class="finder-list">
+        <li>
+          <a class="finder-link finder-link--twitter" href="https://x.com/ashleymcnamara" target="_blank" rel="me noopener noreferrer">
+            <span class="file-icon" aria-hidden="true">twt</span>
+            <span class="file-name">
+              <strong>Twitter</strong>
+              <span>@ashleymcnamara</span>
+            </span>
+            <span class="file-kind">Internet alias</span>
+            <svg class="open-icon" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M6 14 14 6M8 6h6v6"/>
+            </svg>
+            <span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </li>
+        <li>
+          <a class="finder-link finder-link--bluesky" href="https://bsky.app/profile/ashley.dev" target="_blank" rel="me noopener noreferrer">
+            <span class="file-icon" aria-hidden="true">bsky</span>
+            <span class="file-name">
+              <strong>Bluesky</strong>
+              <span>@ashley.dev</span>
+            </span>
+            <span class="file-kind">Internet alias</span>
+            <svg class="open-icon" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M6 14 14 6M8 6h6v6"/>
+            </svg>
+            <span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </li>
+        <li>
+          <a class="finder-link finder-link--threads" href="https://www.threads.net/@ashley_n_willis" target="_blank" rel="me noopener noreferrer">
+            <span class="file-icon" aria-hidden="true">@</span>
+            <span class="file-name">
+              <strong>Threads</strong>
+              <span>@ashley_n_willis</span>
+            </span>
+            <span class="file-kind">Internet alias</span>
+            <svg class="open-icon" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M6 14 14 6M8 6h6v6"/>
+            </svg>
+            <span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </li>
+        <li>
+          <a class="finder-link finder-link--github" href="https://github.com/ashleymcnamara" target="_blank" rel="me noopener noreferrer">
+            <span class="file-icon" aria-hidden="true">git</span>
+            <span class="file-name">
+              <strong>GitHub</strong>
+              <span>@ashleymcnamara</span>
+            </span>
+            <span class="file-kind">Internet alias</span>
+            <svg class="open-icon" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M6 14 14 6M8 6h6v6"/>
+            </svg>
+            <span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </li>
+        <li>
+          <a class="finder-link finder-link--linkedin" href="https://www.linkedin.com/in/ashleymcnamara1" target="_blank" rel="me noopener noreferrer">
+            <span class="file-icon" aria-hidden="true">in</span>
+            <span class="file-name">
+              <strong>LinkedIn</strong>
+              <span>ashleymcnamara1</span>
+            </span>
+            <span class="file-kind">Internet alias</span>
+            <svg class="open-icon" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M6 14 14 6M8 6h6v6"/>
+            </svg>
+            <span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </li>
+        <li>
+          <a class="finder-link finder-link--instagram" href="https://www.instagram.com/ashley_n_willis/profilecard/?igsh=dXp1eG1nbjRhanZ2" target="_blank" rel="me noopener noreferrer">
+            <span class="file-icon" aria-hidden="true">ig</span>
+            <span class="file-name">
+              <strong>Instagram</strong>
+              <span>@ashley_n_willis</span>
+            </span>
+            <span class="file-kind">Internet alias</span>
+            <svg class="open-icon" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M6 14 14 6M8 6h6v6"/>
+            </svg>
+            <span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="window__statusbar">6 items, 0 hidden</footer>
+  </section>
+
+  <aside class="window window--read-me" id="read-me" aria-labelledby="read-me-title">
+    <header class="window__titlebar">
+      <h2 id="read-me-title">Read Me</h2>
+    </header>
+    <div class="read-me">
+      <span class="read-me__icon" aria-hidden="true">!</span>
+      <p>
+        Welcome! This desktop keeps all of my favorite internet places in one
+        spot. Open an alias, change the wallpaper, and stay curious.
+      </p>
+    </div>
+  </aside>
+</main>
+
+<dialog class="window window--secret-about" id="about-this-website" aria-labelledby="secret-about-title">
+  <header class="window__titlebar">
+    <form method="dialog">
+      <button class="window__close" type="submit" aria-label="Close About This Website"></button>
+    </form>
+    <h2 id="secret-about-title">About This Website</h2>
+  </header>
+
+  <div class="secret-about">
+    <div class="tiny-computer" aria-hidden="true">
+      <span class="tiny-computer__screen">AW</span>
+      <span class="tiny-computer__base"></span>
+    </div>
+    <div>
+      <h3>Ashley Desktop 9.5</h3>
+      <p>One human, six internet aliases, and several suspiciously clickable pixels.</p>
+      <dl class="secret-specs">
+        <div><dt>Memory</dt><dd>Powered by curiosity</dd></div>
+        <div><dt>Uptime</dt><dd>Since 2024</dd></div>
+        <div><dt>Domain</dt><dd>ashleywillis.social</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <footer class="window__statusbar">System ready</footer>
+</dialog>
+
+<div class="sr-only" id="easter-egg-status" aria-live="polite"></div>

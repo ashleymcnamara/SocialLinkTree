@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="desktop" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="#6766a4"/>
+      <rect width="2" height="2" fill="#7473ad"/>
+      <rect x="2" y="2" width="2" height="2" fill="#59588f"/>
+    </pattern>
+    <pattern id="stripes" width="5" height="5" patternUnits="userSpaceOnUse">
+      <rect width="5" height="5" fill="#fff"/>
+      <rect y="2" width="5" height="1" fill="#111"/>
+    </pattern>
+    <clipPath id="portrait">
+      <rect x="93" y="193" width="220" height="220"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#desktop)"/>
+  <rect width="1200" height="34" fill="#d6d6d6"/>
+  <rect y="32" width="1200" height="2" fill="#111"/>
+  <rect x="14" y="7" width="21" height="21" fill="#111"/>
+  <text x="24.5" y="22" text-anchor="middle" fill="#fff" font-family="Verdana,Arial,sans-serif" font-size="8" font-weight="700">AW</text>
+  <text x="45" y="23" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="15" font-weight="700">Ashley Desktop</text>
+  <text x="184" y="23" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="15">About</text>
+  <text x="247" y="23" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="15">Profiles</text>
+  <circle cx="1030" cy="17" r="5" fill="#087f23" stroke="#111"/>
+  <text x="1044" y="23" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="14">Internet: Connected</text>
+
+  <rect x="59" y="130" width="500" height="370" fill="#111" opacity=".4"/>
+  <rect x="50" y="121" width="500" height="370" fill="#d6d6d6" stroke="#111" stroke-width="3"/>
+  <rect x="53" y="124" width="494" height="32" fill="url(#stripes)"/>
+  <rect x="210" y="126" width="180" height="27" fill="#d6d6d6"/>
+  <text x="300" y="146" text-anchor="middle" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="16" font-weight="700">About Ashley</text>
+  <rect x="53" y="154" width="494" height="3" fill="#111"/>
+  <rect x="86" y="184" width="234" height="234" fill="#fff" stroke="#111" stroke-width="4"/>
+  <image href="ashley-willis.jpg" x="93" y="193" width="220" height="220" clip-path="url(#portrait)" preserveAspectRatio="xMidYMid slice"/>
+  <text x="345" y="208" fill="#000080" font-family="Verdana,Arial,sans-serif" font-size="16" font-weight="700">Welcome to my corner of the internet.</text>
+  <text x="345" y="260" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="42" font-weight="700">Ashley Willis</text>
+  <text x="345" y="304" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="19">Developer advocate,</text>
+  <text x="345" y="332" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="19">open-source enthusiast,</text>
+  <text x="345" y="360" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="19">professional internet person.</text>
+  <rect x="345" y="385" width="174" height="62" fill="#fff" stroke="#555"/>
+  <rect x="345" y="385" width="62" height="31" fill="#d9d9f3"/>
+  <rect x="345" y="416" width="62" height="31" fill="#d9d9f3"/>
+  <text x="357" y="406" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="13" font-weight="700">Status</text>
+  <text x="420" y="406" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="13">Online</text>
+  <text x="357" y="437" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="13" font-weight="700">Mode</text>
+  <text x="420" y="437" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="13">Curious</text>
+
+  <rect x="605" y="178" width="540" height="318" fill="#111" opacity=".4"/>
+  <rect x="596" y="169" width="540" height="318" fill="#d6d6d6" stroke="#111" stroke-width="3"/>
+  <rect x="599" y="172" width="534" height="32" fill="url(#stripes)"/>
+  <rect x="783" y="174" width="166" height="27" fill="#d6d6d6"/>
+  <text x="866" y="194" text-anchor="middle" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="16" font-weight="700">Internet Places</text>
+  <rect x="599" y="202" width="534" height="3" fill="#111"/>
+  <rect x="599" y="205" width="534" height="49" fill="#d6d6d6"/>
+  <text x="617" y="235" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="14" font-weight="700">Where to find me</text>
+  <g font-family="Verdana,Arial,sans-serif">
+    <rect x="599" y="254" width="534" height="38" fill="#fff"/><text x="625" y="279" fill="#111" font-size="15">Twitter</text>
+    <rect x="599" y="292" width="534" height="38" fill="#fff"/><text x="625" y="317" fill="#111" font-size="15">Bluesky</text>
+    <rect x="599" y="330" width="534" height="38" fill="#fff"/><text x="625" y="355" fill="#111" font-size="15">Threads</text>
+    <rect x="599" y="368" width="534" height="38" fill="#fff"/><text x="625" y="393" fill="#111" font-size="15">GitHub</text>
+    <rect x="599" y="406" width="534" height="38" fill="#fff"/><text x="625" y="431" fill="#111" font-size="15">LinkedIn</text>
+    <rect x="599" y="444" width="534" height="38" fill="#fff"/><text x="625" y="469" fill="#111" font-size="15">Instagram</text>
+  </g>
+
+  <rect x="1030" y="65" width="52" height="46" fill="#d6d6d6" stroke="#111" stroke-width="3"/>
+  <text x="1056" y="94" text-anchor="middle" fill="#111" font-family="Verdana,Arial,sans-serif" font-size="12" font-weight="700">AW</text>
+  <text x="1056" y="128" text-anchor="middle" fill="#fff" font-family="Verdana,Arial,sans-serif" font-size="13" font-weight="700">About Ashley</text>
+</svg>
