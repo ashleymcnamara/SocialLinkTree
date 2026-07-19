@@ -5,8 +5,7 @@
 <h1 align="center">Ashley Desktop</h1>
 
 <p align="center">
-  Ashley Willis's official corner of the internet, reimagined as a responsive
-  Classic Mac OS-inspired desktop.
+ 
 </p>
 
 <p align="center">
